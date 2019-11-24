@@ -93,7 +93,7 @@ app_short.get('/q/:id', (req, res) => {
 app_short.get('/:username', (req, res) => {
     User.getUserByUsername(req.params.username, function(err, user) {
         if(user) {
-            res.redirect('https://myquizzy.com/profil/'+ user._id);
+            res.redirect('https://myquizzy.com/profile/'+ user._id);
         } else {
             res.redirect('https://myquizzy.com/');
 
